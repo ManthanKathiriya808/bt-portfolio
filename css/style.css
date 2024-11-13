@@ -381,7 +381,7 @@ footer {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   padding-block: 0.5rem;
   padding-inline: 1.25rem;
-  background-color: var(--primary-color);
+  background-color: black;
   border-radius: 9999px;
   display: flex;
   align-items: center;
@@ -414,15 +414,33 @@ footer {
 .button1:hover .icon {
   transform: translate(4px);
 }
-.button12:hover .icon {
+.button2:hover .icon {
   transform: translate(4px);
 }
 
 .button1:hover::before {
   animation: shine 1.5s ease-out infinite;
 }
+.button2:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
 
 .button1::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+.button2::before {
   content: "";
   position: absolute;
   width: 100px;
@@ -451,3 +469,7 @@ footer {
     left: 100%;
   }
 }
+
+
+
+/* photo */
