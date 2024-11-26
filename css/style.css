@@ -7,7 +7,7 @@
 }
 
 body{
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 :root{
     --primary-color:#6E06F2;
