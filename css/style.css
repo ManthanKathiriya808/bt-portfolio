@@ -3,8 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: poppins;
+
 }
 
+body{
+  overflow-x: hidden !important;
+}
 :root{
     --primary-color:#6E06F2;
     --purple-color:#31036ea9;
@@ -374,8 +378,11 @@ footer {
   outline: none;
   overflow: hidden;
   font-size: 15px;
+width: 100%;
 }
 .button2 {
+
+  width: 100%;
   position: relative;
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
@@ -473,3 +480,6 @@ footer {
 
 
 /* photo */
+
+
+
